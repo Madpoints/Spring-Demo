@@ -7,4 +7,10 @@ public class LacrosseCoach implements Coach {
 		
 		return "Run fast break drill for 15 minutes";
 	}
+
+	@Override
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
