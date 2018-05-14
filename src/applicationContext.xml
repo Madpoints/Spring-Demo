@@ -23,7 +23,8 @@
     </bean>
     
     <bean id="myLacrosseCoach"
-	   	class="com.madpoints.springdemo.LacrosseCoach">
+	   	class="com.madpoints.springdemo.LacrosseCoach"
+	   	scope="prototype">
 	   	<!-- set up setter object injection -->
 	   	<property name="fortuneService" ref="myFortuneService"></property>
 	   	<!-- literal value injection with setters -->
