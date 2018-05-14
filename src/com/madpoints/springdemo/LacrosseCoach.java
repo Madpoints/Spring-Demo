@@ -1,7 +1,10 @@
 package com.madpoints.springdemo;
 
 public class LacrosseCoach implements Coach {
-
+	
+	private String emailAddress;
+	private String team;
+	
 	// define private field for dependency
 	private FortuneService fortuneService;
 		
@@ -14,6 +17,24 @@ public class LacrosseCoach implements Coach {
 	public LacrosseCoach() {
 		super();
 		System.out.println("LacrosseCoach: inside no-arg contructor");
+	}
+	
+	public String getEmailAddress() {
+		return emailAddress;
+	}
+
+	public String getTeam() {
+		return team;
+	}
+
+	public void setEmailAddress(String emailAddress) {
+		System.out.println("LacrosseCoach: inside setter - setEmailAddress");
+		this.emailAddress = emailAddress;
+	}
+
+	public void setTeam(String team) {
+		System.out.println("LacrosseCoach: inside setter - setTeam");
+		this.team = team;
 	}
 	
 	// setter method
@@ -31,4 +52,6 @@ public class LacrosseCoach implements Coach {
 	public String getDailyFortune() {	
 		return fortuneService.getFortune();
 	}
+	
+	
 }
