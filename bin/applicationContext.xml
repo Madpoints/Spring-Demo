@@ -14,10 +14,15 @@
     	class="com.madpoints.springdemo.HappyFortuneService"></bean>
     
     <bean id="myCoach"
-    	class="com.madpoints.springdemo.TrackCoach">
-    	
+    	class="com.madpoints.springdemo.TrackCoach">   	
     	<!-- set up constructor injection -->
     	<constructor-arg ref="myFortuneService"></constructor-arg>
+    </bean>
+    
+     <bean id="myLacrosseCoach"
+    	class="com.madpoints.springdemo.LacrosseCoach">
+    	<!-- set up setter injection -->
+    	<property name="fortuneService" ref="myFortuneService"></property>
     </bean>
     
 </beans>
