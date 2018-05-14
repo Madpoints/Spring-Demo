@@ -10,15 +10,18 @@ public class BaseballCoach implements Coach {
 		fortuneService = theFortuneService;
 	}
 	
+	// no arg constructor
+	public BaseballCoach() {
+		super();
+	}
+	
 	@Override
 	public String getDailyWorkout() {
-		
 		return "30 minutes batting practice";
 	}
 
 	@Override
 	public String getDailyFortune() {
-		
 		// use fortuneService to get fortune
 		return fortuneService.getFortune();
 	}

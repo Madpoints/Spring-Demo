@@ -14,7 +14,7 @@
     	class="com.madpoints.springdemo.HappyFortuneService"></bean>
     
     <bean id="myCoach"
-    	class="com.madpoints.springdemo.BaseballCoach">
+    	class="com.madpoints.springdemo.TrackCoach">
     	
     	<!-- set up constructor injection -->
     	<constructor-arg ref="myFortuneService"></constructor-arg>
